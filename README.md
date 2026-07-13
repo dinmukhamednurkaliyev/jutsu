@@ -1,75 +1,14 @@
-# Nuxt Minimal Starter
+# Nexus
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Stack: Bun](https://img.shields.io/badge/Stack-Bun-black?style=flat&logo=bun&logoColor=white)](https://bun.sh)
+[![Stack: Vue 3](https://img.shields.io/badge/Stack-Vue%203-4FC08D?style=flat&logo=vue.js&logoColor=white)](https://vuejs.org)
+[![Stack: Nuxt 3](https://img.shields.io/badge/Stack-Nuxt%203-00DC82?style=flat&logo=nuxt&logoColor=white)](https://nuxt.com)
+[![Stack: Pinia](https://img.shields.io/badge/Stack-Pinia-42b883?style=flat&logo=pinia&logoColor=white)](https://pinia.vuejs.org)
+[![Stack: TailwindCSS](https://img.shields.io/badge/Stack-TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
-## Setup
+## Overview
 
-Make sure to install dependencies:
 
-```bash
-# npm
-npm install
+## License
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
