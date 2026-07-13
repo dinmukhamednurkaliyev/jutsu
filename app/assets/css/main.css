@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #181825;
+  --color-foreground: #cdd6f4;
+  --color-primary: #a6e3a1;
+}
+
+@layer base {
+}
+
+@layer components {
+}

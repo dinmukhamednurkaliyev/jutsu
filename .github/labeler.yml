@@ -1,0 +1,34 @@
+infrastructure:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/**'
+          - 'docker/**'
+          - 'terraform/**'
+          - 'k8s/**'
+          - '*.config.*'
+          - 'tsconfig.json'
+
+frontend:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'app.vue'
+          - 'components/**'
+          - 'pages/**'
+          - 'assets/**'
+
+server:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'server/**'
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'package.json'
+          - '*-lock.*'
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - 'LICENSE'
