@@ -1,13 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #181825;
-  --color-foreground: #cdd6f4;
-  --color-primary: #a6e3a1;
+  --color-background-primary: #0c0c0c;
+  --color-on-background-primary: #ffffff;
+
+  --color-background-secondary: #212121;
+  --color-on-background-secondary: #767676;
+
+  --color-background-tertiary: #363636;
+  --color-on-background-tertiary: #ffffff;
+
+  --color-accent-primary: #ff30ac;
+  --color-on-accent-primary: #ffffff;
+
+  --color-accent-primary-start: #ff30ac;
+  --color-accent-primary-end: #7b1ad1;
+  --color-on-accent-primary: #ffffff;
+
+  --color-accent-primary-start-hover: #e02dbd;
+  --color-accent-primary-end-hover: #6a16b5;
 }
 
 @layer base {
+  body {
+    background-color: var(--color-background-primary);
+    color: var(--color-on-background-primary);
+    font-family: var(--default-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 @layer components {
+  .accent-gradient {
+    @apply bg-linear-to-r from-(--color-accent-primary-start) to-accent-primary-end 
+           text-(--color-on-accent=primary)
+           transition-all duration-300;
+  }
+
+  .accent-gradient:hover {
+    @apply from-accent-primary-start-hover to-accent-primary-end-hover;
+  }
 }
