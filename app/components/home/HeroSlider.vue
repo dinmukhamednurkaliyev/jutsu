@@ -15,12 +15,28 @@ const slides: HeroSlide[] = [
     actionLabel: "Посмотреть топовый сериал",
     actionTo: "/anime/naruto",
   },
+  {
+    id: 2,
+    title: "Атака титанов",
+    image: "/images/hero/attack-on-titan.webp",
+    actionLabel: "Начать просмотр",
+    actionTo: "/anime/attack-on-titan",
+  },
 ];
+const activeSlideIndex = ref(0);
 </script>
 
 <template>
-  <section class="overflow-hidden rounded-3xl" aria-label="Рекомендуемые аниме">
-    <div class="relative h-96" v-for="slide in slides" :key="slide.id">
+  <section
+    class="relative overflow-hidden rounded-3xl"
+    aria-label="Рекомендуемые аниме"
+  >
+    <div
+      class="relative h-96"
+      v-for="(slide, index) in slides"
+      v-show="index === activeSlideIndex"
+      :key="slide.id"
+    >
       <img
         class="h-full w-full object-cover"
         :src="slide.image"
