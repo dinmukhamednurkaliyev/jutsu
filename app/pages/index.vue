@@ -1,5 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <HomeHeroSlider />
+  <div class="flex flex-col gap-12">
+    <HomeHeroSlider />
+    <HomePopularSection />
+  </div>
 </template>

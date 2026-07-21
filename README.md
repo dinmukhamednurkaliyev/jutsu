@@ -62,17 +62,6 @@ Coming soon!
 | Android | ✖ Not Available |
 | iOS     | ✖ Not Available |
 
-## Roadmap
-
-| Feature           | Status      | Notes                          |
-| ----------------- | ----------- | ------------------------------ |
-| Initial Setup     | Complete    | Project initialization         |
-| Header            | Complete    | Navigation and search          |
-| Hero              | In Progress | Carousel and banners           |
-| Anime Catalog     | Planned     | Grid and filtering             |
-| Search            | Planned     | Full-text search               |
-| Responsive Layout | Planned     | Mobile and tablet optimization |
-
 ## Disclaimer
 
 This is an unofficial, non-commercial educational project.
