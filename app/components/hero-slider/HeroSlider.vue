@@ -3,7 +3,7 @@ import HeroSliderControls from "./HeroSliderControls.vue";
 import HeroSliderPagination from "./HeroSliderPagination.vue";
 import HeroSliderSlide from "./HeroSliderSlide.vue";
 
-import { heroSlides } from "~/types/hero-slides";
+import { heroSlides } from "~/data/hero-slides";
 import type { HeroSlide } from "~/types/hero-slider";
 
 const activeSlideIndex = ref(0);
