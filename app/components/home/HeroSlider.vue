@@ -1,66 +1,46 @@
 <script setup lang="ts">
-interface HeroSlide {
-  id: number;
-  title: string;
-  image: string;
-  actionLabel: string;
-  actionTo: string;
+import HeroSliderControls from "./HeroSliderControls.vue";
+import HeroSliderPagination from "./HeroSliderPagination.vue";
+import HeroSliderSlide from "./HeroSliderSlide.vue";
+
+import { heroSlides } from "~/types/hero-slides";
+import type { HeroSlide } from "~/types/hero-slider";
+
+const activeSlideIndex = ref(0);
+
+const activeSlide = computed<HeroSlide>(() => {
+  return heroSlides[activeSlideIndex.value] ?? heroSlides[0]!;
+});
+
+function selectSlide(index: number): void {
+  activeSlideIndex.value = index;
 }
 
-const slides: HeroSlide[] = [
-  {
-    id: 1,
-    title: "Наруто",
-    image: "/images/hero/naruto.webp",
-    actionLabel: "Посмотреть топовый сериал",
-    actionTo: "/anime/naruto",
-  },
-  {
-    id: 2,
-    title: "Атака титанов",
-    image: "/images/hero/attack-on-titan.webp",
-    actionLabel: "Начать просмотр",
-    actionTo: "/anime/attack-on-titan",
-  },
-];
-const activeSlideIndex = ref(0);
+function showPreviousSlide(): void {
+  activeSlideIndex.value =
+    (activeSlideIndex.value - 1 + heroSlides.length) % heroSlides.length;
+}
+
+function showNextSlide(): void {
+  activeSlideIndex.value = (activeSlideIndex.value + 1) % heroSlides.length;
+}
 </script>
 
 <template>
-  <section
-    class="relative overflow-hidden rounded-3xl"
-    aria-label="Рекомендуемые аниме"
-  >
-    <div
-      class="relative h-96"
-      v-for="(slide, index) in slides"
-      v-show="index === activeSlideIndex"
-      :key="slide.id"
+  <div class="relative">
+    <section
+      class="relative overflow-hidden rounded-3xl"
+      aria-label="Рекомендуемые аниме"
     >
-      <img
-        class="h-full w-full object-cover"
-        :src="slide.image"
-        :alt="slide.title"
+      <HeroSliderSlide :slide="activeSlide" />
+
+      <HeroSliderPagination
+        :slides="heroSlides"
+        :active-index="activeSlideIndex"
+        @select="selectSlide"
       />
-      <div
-        class="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-transparent"
-        aria-hidden="true"
-      />
-      <div class="absolute inset-0 flex items-center">
-        <div class="max-w-xl px-10">
-          <div class="flex flex-col items-start gap-6">
-            <h2 class="text-5xl font-extrabold tracking-tight">
-              {{ slide.title }}
-            </h2>
-            <NuxtLink
-              :to="slide.actionTo"
-              class="inline-flex items-center justify-center rounded-full bg-linear-to-r from-accent-primary to-accent-secondary px-6 py-3 text-sm font-medium transition-opacity hover:opacity-90"
-            >
-              {{ slide.actionLabel }}
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <HeroSliderControls @previous="showPreviousSlide" @next="showNextSlide" />
+  </div>
 </template>
