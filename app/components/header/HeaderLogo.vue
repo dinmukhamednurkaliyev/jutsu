@@ -1,13 +1,13 @@
 <template>
   <NuxtLink
+    aria-label="Перейти на главную страницу"
     class="inline-flex shrink-0 items-center gap-1 font-extrabold"
     to="/"
-    aria-label="Перейти на главную"
   >
     <span>JUT-SU</span>
 
     <span
-      class="text-sm rounded-sm bg-linear-to-r from-accent-primary to-accent-secondary px-2 py-1"
+      class="rounded-sm bg-linear-to-r from-accent-primary to-accent-secondary px-2 py-1 text-sm"
     >
       .net
     </span>
