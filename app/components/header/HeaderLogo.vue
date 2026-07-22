@@ -6,10 +6,6 @@
   >
     <span>JUT-SU</span>
 
-    <span
-      class="rounded-sm bg-linear-to-r from-accent-primary to-accent-secondary px-2 py-1 text-sm"
-    >
-      .net
-    </span>
+    <span class="rounded-sm accent-gradient px-2 py-1 text-sm"> .net </span>
   </NuxtLink>
 </template>

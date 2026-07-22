@@ -19,7 +19,7 @@ const emit = defineEmits<Emits>();
     </button>
 
     <button
-      class="rounded-full bg-linear-to-r from-accent-primary to-accent-secondary px-8 py-3 text-sm font-medium transition-opacity hover:opacity-90"
+      class="rounded-full accent-gradient px-8 py-3 text-sm font-medium transition-opacity hover:opacity-90"
       type="button"
       @click="emit('login')"
     >

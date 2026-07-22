@@ -21,9 +21,18 @@
   --color-text-primary: #ffffff;
   --color-text-secondary: #777777;
   /* Accent */
-  --color-accent-primary: #ff30ac;
-  --color-accent-secondary: #c882ff;
+  --color-accent-start: #ff30ac;
+  --color-accent-end: #c882ff;
+  --color-badge-start: #ff6e30;
+  --color-badge-end: #ffdc82;
 }
 
 @layer utilities {
+  .accent-gradient {
+    @apply bg-linear-to-r from-accent-start to-accent-end;
+  }
+
+  .badge-gradient {
+    @apply bg-linear-to-r from-badge-start to-badge-end;
+  }
 }
