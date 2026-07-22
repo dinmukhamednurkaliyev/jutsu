@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import HeroSliderControls from "./HeroSliderControls.vue";
-import HeroSliderPagination from "./HeroSliderPagination.vue";
-import HeroSliderSlide from "./HeroSliderSlide.vue";
-
 import { heroSlides } from "~/data/hero-slides";
 import type { HeroSlide } from "~/types/hero-slider";
 
@@ -41,6 +37,6 @@ function showNextSlide(): void {
       />
     </section>
 
-    <HeroSliderControls @previous="showPreviousSlide" @next="showNextSlide" />
+    <HeroSliderControl @previous="showPreviousSlide" @next="showNextSlide" />
   </div>
 </template>
