@@ -17,7 +17,7 @@ defineProps<Props>();
           :alt="anime.title"
         />
         <div
-          class="absolute top-3 right-3 rounded-full badge-gradient px-2.5 py-1 text0sm font-semibold"
+          class="absolute top-3 right-3 rounded-full badge-gradient px-2.5 py-1 text-sm font-semibold"
         >
           {{ anime.rating }}
         </div>

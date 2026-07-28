@@ -8,17 +8,32 @@ const activeSlide = computed<HeroSlide>(() => {
   return heroSlides[activeSlideIndex.value] ?? heroSlides[0]!;
 });
 
+const canShowPrevious = computed<boolean>(() => {
+  return activeSlideIndex.value > 0;
+});
+
+const canShowNext = computed<boolean>(() => {
+  return activeSlideIndex.value < heroSlides.length - 1;
+});
+
 function selectSlide(index: number): void {
   activeSlideIndex.value = index;
 }
 
 function showPreviousSlide(): void {
-  activeSlideIndex.value =
-    (activeSlideIndex.value - 1 + heroSlides.length) % heroSlides.length;
+  if (!canShowPrevious.value) {
+    return;
+  }
+
+  activeSlideIndex.value--;
 }
 
 function showNextSlide(): void {
-  activeSlideIndex.value = (activeSlideIndex.value + 1) % heroSlides.length;
+  if (!canShowNext.value) {
+    return;
+  }
+
+  activeSlideIndex.value++;
 }
 </script>
 
@@ -31,12 +46,18 @@ function showNextSlide(): void {
       <HeroSliderSlide :slide="activeSlide" />
 
       <HeroSliderPagination
+        v-if="heroSlides.length > 1"
         :slides="heroSlides"
         :active-index="activeSlideIndex"
         @select="selectSlide"
       />
     </section>
 
-    <HeroSliderControl @previous="showPreviousSlide" @next="showNextSlide" />
+    <HeroSliderControls
+      :show-previous="canShowPrevious"
+      :show-next="canShowNext"
+      @previous="showPreviousSlide"
+      @next="showNextSlide"
+    />
   </div>
 </template>

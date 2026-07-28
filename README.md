@@ -49,7 +49,15 @@ The main goals of the project are:
 
 ## Screenshots
 
-Coming soon!
+## Screenshots
+
+<p align="center">
+  <img
+    src="documentation/images/screenshots/screen-1.png"
+    alt="Screen 1"
+    width="48%"
+  >
+</p>
 
 ## Distribution
 
