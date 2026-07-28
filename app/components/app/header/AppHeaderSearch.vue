@@ -1,14 +1,10 @@
 <template>
   <form
-    class="flex items-center gap-3 rounded-full bg-surface-input px-4 py-3 transition focus-within:ring-2 focus-within:ring-accent-primary"
+    class="focus-within:ring-accent-primary flex items-center gap-3 rounded-full bg-surface-input px-4 py-3 transition focus-within:ring-2"
     role="search"
     @submit.prevent
   >
-    <Icon
-      aria-hidden="true"
-      class="shrink-0 text-text-secondary"
-      name="lucide:search"
-    />
+    <Icon aria-hidden="true" class="shrink-0 text-text-secondary" name="lucide:search" />
 
     <label class="sr-only" for="header-search"> Поиск по сайту </label>
 

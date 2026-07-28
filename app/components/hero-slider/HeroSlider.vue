@@ -39,10 +39,7 @@ function showNextSlide(): void {
 
 <template>
   <div class="relative">
-    <section
-      class="relative overflow-hidden rounded-3xl"
-      aria-label="Рекомендуемые аниме"
-    >
+    <section class="relative overflow-hidden rounded-3xl" aria-label="Рекомендуемые аниме">
       <HeroSliderSlide :slide="activeSlide" />
 
       <HeroSliderPagination

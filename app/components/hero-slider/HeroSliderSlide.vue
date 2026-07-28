@@ -10,11 +10,7 @@ defineProps<Props>();
 
 <template>
   <div class="relative h-120">
-    <img
-      class="relative z-0 h-full w-full object-cover"
-      :src="slide.image"
-      :alt="slide.title"
-    />
+    <img class="relative z-0 h-full w-full object-cover" :src="slide.image" :alt="slide.title" />
 
     <div
       aria-hidden="true"
@@ -29,7 +25,7 @@ defineProps<Props>();
 
         <NuxtLink
           :to="slide.actionTo"
-          class="inline-flex items-center justify-center rounded-full accent-gradient px-6 py-3 text-sm font-medium transition-opacity hover:opacity-90 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+          class="accent-gradient inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition-opacity hover:opacity-90 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
         >
           {{ slide.actionLabel }}
         </NuxtLink>

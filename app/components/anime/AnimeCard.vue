@@ -17,9 +17,15 @@ defineProps<Props>();
           :alt="anime.title"
         />
         <div
-          class="absolute top-3 right-3 rounded-full badge-gradient px-2.5 py-1 text-sm font-semibold"
+          class="badge-gradient absolute top-3 right-3 rounded-full px-2.5 py-1 text-sm font-semibold"
         >
           {{ anime.rating }}
+        </div>
+        <div
+          v-if="anime.episodes"
+          class="absolute bottom-3 left-3 rounded-full bg-accent-start px-2.5 py-1 text-xs font-semibold"
+        >
+          {{ anime.episodes }}
         </div>
       </div>
 

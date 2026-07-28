@@ -20,10 +20,7 @@ function selectSlide(index: number): void {
 </script>
 
 <template>
-  <nav
-    class="absolute bottom-10 left-20 z-30 flex gap-3"
-    aria-label="Выбор слайда"
-  >
+  <nav class="absolute bottom-10 left-20 z-30 flex gap-3" aria-label="Выбор слайда">
     <button
       v-for="(slide, index) in slides"
       :key="slide.id"
