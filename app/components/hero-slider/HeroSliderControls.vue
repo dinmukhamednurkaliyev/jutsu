@@ -1,28 +1,37 @@
 <script setup lang="ts">
+interface Props {
+  showPrevious: boolean;
+  showNext: boolean;
+}
+
 interface Emits {
   previous: [];
   next: [];
 }
+
+defineProps<Props>();
 
 const emit = defineEmits<Emits>();
 </script>
 
 <template>
   <button
+    v-if="showPrevious"
     type="button"
     class="absolute top-1/2 left-0 z-30 flex size-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-surface-input text-white transition-colors hover:bg-zinc-600 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
-    aria-label="Предыдущий слайд"
+    aria-label="Показать предыдущий слайд"
     @click="emit('previous')"
   >
-    <Icon aria-hidden="true" class="size-5" name="lucide:chevron-left" />
+    <Icon name="lucide:chevron-left" class="size-5" aria-hidden="true" />
   </button>
 
   <button
+    v-if="showNext"
     type="button"
     class="absolute top-1/2 right-0 z-30 flex size-10 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-surface-input text-white transition-colors hover:bg-zinc-600 focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
-    aria-label="Следующий слайд"
+    aria-label="Показать следующий слайд"
     @click="emit('next')"
   >
-    <Icon aria-hidden="true" class="size-5" name="lucide:chevron-right" />
+    <Icon name="lucide:chevron-right" class="size-5" aria-hidden="true" />
   </button>
 </template>
