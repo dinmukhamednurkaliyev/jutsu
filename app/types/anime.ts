@@ -3,5 +3,6 @@ export interface Anime {
   title: string;
   image: string;
   rating: number;
+  episodes?: string;
   to: string;
 }

@@ -5,11 +5,7 @@ import { headerNavigationItems } from "~/data/header-navigation";
 <template>
   <nav aria-label="Основная навигация">
     <ul class="flex items-stretch">
-      <li
-        v-for="item in headerNavigationItems"
-        :key="item.to"
-        class="flex flex-1"
-      >
+      <li v-for="item in headerNavigationItems" :key="item.to" class="flex flex-1">
         <NuxtLink
           :to="item.to"
           :exact="item.to === '/'"

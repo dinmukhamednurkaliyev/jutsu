@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
-  compatibilityDate: "2025-07-15",
+  modules: ["@pinia/nuxt", "@nuxt/eslint", "@nuxt/icon"],
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: ["@pinia/nuxt", "@nuxt/eslint", "@nuxt/icon"],
+  compatibilityDate: "2025-07-15",
   vite: {
     plugins: [(await import("@tailwindcss/vite")).default()],
   },

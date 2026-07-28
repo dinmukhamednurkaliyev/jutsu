@@ -13,6 +13,7 @@ defineProps<Props>();
 
 const emit = defineEmits<Emits>();
 </script>
+
 <template>
   <button
     v-if="showPrevious"

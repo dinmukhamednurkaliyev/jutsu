@@ -11,10 +11,7 @@ const visibleItemCount = 5;
 const activeIndex = ref(0);
 
 const visibleAnime = computed<Anime[]>(() => {
-  return props.animeList.slice(
-    activeIndex.value,
-    activeIndex.value + visibleItemCount,
-  );
+  return props.animeList.slice(activeIndex.value, activeIndex.value + visibleItemCount);
 });
 
 const canShowPrevious = computed<boolean>(() => {
@@ -25,7 +22,7 @@ const canShowNext = computed<boolean>(() => {
   return activeIndex.value < props.animeList.length - visibleItemCount;
 });
 
-function showPreviousCards(): void {
+function showPrevious(): void {
   if (!canShowPrevious.value) {
     return;
   }
@@ -33,7 +30,7 @@ function showPreviousCards(): void {
   activeIndex.value--;
 }
 
-function showNextCards(): void {
+function showNext(): void {
   if (!canShowNext.value) {
     return;
   }
@@ -44,19 +41,13 @@ function showNextCards(): void {
 
 <template>
   <div class="relative">
-    <div class="grid grid-cols-5 gap-6">
-      <PopularAnimeCard
-        v-for="anime in visibleAnime"
-        :key="anime.id"
-        :anime="anime"
-      />
-    </div>
+    <PopularAnimeGrid :anime-list="visibleAnime" />
 
     <PopularAnimeSliderControls
       :show-previous="canShowPrevious"
       :show-next="canShowNext"
-      @previous="showPreviousCards"
-      @next="showNextCards"
+      @previous="showPrevious"
+      @next="showNext"
     />
   </div>
 </template>
