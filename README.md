@@ -51,9 +51,9 @@ The main goals of the project are:
 
 <p align="center">
   <img
-    src="documentation/images/screenshots/screen-1.png"
-    alt="Screen 1"
-  >
+    src="documentation/images/screenshots/home-page.png"
+    alt="Home Page"
+>
 </p>
 
 ## Distribution

@@ -29,9 +29,11 @@ defineProps<Props>();
         </div>
       </div>
 
-      <h3 class="mt-3 line-clamp-2 text-base font-semibold">
-        {{ anime.title }}
-      </h3>
+      <div class="mt-3">
+        <h3 class="line-clamp-2 text-sm leading-snug font-semibold">
+          {{ anime.title }}
+        </h3>
+      </div>
     </article>
   </NuxtLink>
 </template>

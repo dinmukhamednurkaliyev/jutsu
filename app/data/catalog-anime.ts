@@ -1,11 +1,85 @@
 import type { Anime } from "~/types/anime";
 
-export const popularAnime: Anime[] = [
+export const catalogAnime: Anime[] = [
   {
     id: 0,
     title: "Вечная воля 4 сезон",
     image: "/images/anime/a-will-eternal.webp",
-    rating: 0,
+    rating: 9.4,
     to: "/anime/a-will-eternal",
+    episodes: "4 серия",
+  },
+  {
+    id: 1,
+    title: "Чёрный клевер 2 сезон",
+    image: "/images/anime/black-clover.webp",
+    rating: 9.1,
+    to: "/anime/black-clover",
+    episodes: "1 серия",
+  },
+  {
+    id: 2,
+    title: "Блич: Тысячелетняя кровавая война — Бедствие",
+    image: "/images/anime/bleach-sennen-kessen-hen-kashin-tan.webp",
+    rating: 9.5,
+    to: "/anime/bleach-sennen-kessen-hen-kashin-tanr",
+    episodes: "3 серий",
+  },
+  {
+    id: 3,
+    title: "Вечная воля 4 сезон",
+    image: "/images/anime/a-will-eternal.webp",
+    rating: 9.4,
+    to: "/anime/a-will-eternal",
+    episodes: "4 серий",
+  },
+  {
+    id: 4,
+    title: "Ханаори хочет драться даже после перерождения",
+    image: "/images/anime/hanaori-san-wa-tensei-shitemo-kenka-ga-shitai.webp",
+    rating: 7.9,
+    to: "/anime/hanaori-san-wa-tensei-shitemo-kenka-ga-shitai",
+    episodes: "3 серий",
+  },
+  {
+    id: 5,
+    title: "История о перекуре за супермаркетом",
+    image: "/images/anime/super-no-ura-de-yani-suu-futari.webp",
+    rating: 9.2,
+    to: "/anime/super-no-ura-de-yani-suu-futari",
+    episodes: "12 серий",
+  },
+  {
+    id: 6,
+    title: "Необъятный океан 3 сезон",
+    image: "/images/anime/grand-blue.webp",
+    rating: 9.4,
+    to: "/anime/grand-blue",
+    episodes: "5 серий",
+  },
+  {
+    id: 7,
+    title: "Рыцарь-скелет вступает в параллельный мир 2 сезон",
+    image: "/images/anime/gaikotsu-kishi-sama-tadaima-Isekai-e-odekakechuu.webp",
+    rating: 9,
+    to: "/anime/gaikotsu-kishi-sama-tadaima-Isekai-e-odekakechuu",
+    episodes: "4 серий",
+  },
+  {
+    id: 8,
+    title: "Реинкарнация безработного 3 сезон",
+    image: "/images/anime/mushoku-tensei-3-Isekai-Ittara-honki-dasu.webp",
+    rating: 8.6,
+    to: "/anime/mushoku-tensei-3-Isekai-Ittara-honki-dasu",
+    episodes: "5 серий",
+  },
+  {
+    id: 9,
+    title: "Необыкновенный неудачник: Дневник переродившегося колдуна S-ранга",
+    image:
+      "/images/anime/rakudai-kenja-no-gakuin-musou-nidome-no-tensei-s-rank-cheat-majutsushi-boukenroku.webp",
+    rating: 8.9,
+    to: "/anime/rakudai-kenja-no-gakuin-musou-nidome-no-tensei-s-rank-cheat-majutsushi-boukenroku",
+    episodes: "6 серий",
   },
 ];

@@ -10,21 +10,9 @@ const emit = defineEmits<Emits>();
 
 <template>
   <div class="flex shrink-0 items-center gap-3">
-    <button
-      class="rounded-full bg-surface-input px-8 py-3 text-sm font-medium transition-opacity hover:opacity-90"
-      type="button"
-      @click="emit('register')"
-    >
-      Зарегистрироваться
-    </button>
+    <AppButton variant="secondary" size="small"> Зарегистрироваться </AppButton>
 
-    <button
-      class="accent-gradient rounded-full px-8 py-3 text-sm font-medium transition-opacity hover:opacity-90"
-      type="button"
-      @click="emit('login')"
-    >
-      Войти
-    </button>
+    <AppButton size="small"> Войти </AppButton>
 
     <button
       aria-label="Переключить тему"
