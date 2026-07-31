@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { catalogAnime } from "~/data/catalog-anime";
+</script>
+
 <template>
   <AppSection labelled-by="anime-catalog-title">
     <AppSectionHeader
@@ -7,15 +11,22 @@
       icon="lucide:circle-play"
     >
       <template #actions>
-        <button
-          type="button"
-          class="accent-gradient inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium"
-        >
+        <AppButton size="small">
           <Icon name="lucide:list-filter" class="size-4" aria-hidden="true" />
 
           Фильтр
-        </button>
+        </AppButton>
       </template>
     </AppSectionHeader>
+
+    <CatalogAnimeGrid :anime-list="catalogAnime" />
+
+    <div class="mt-12 flex justify-center">
+      <AppButton>
+        Показать ещё
+
+        <Icon name="lucide:arrow-right" class="size-4" aria-hidden="true" />
+      </AppButton>
+    </div>
   </AppSection>
 </template>

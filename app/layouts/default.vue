@@ -6,8 +6,6 @@
       <main class="mt-12">
         <slot />
       </main>
-
-      <Footer />
     </div>
   </div>
 </template>
