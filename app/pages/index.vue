@@ -3,5 +3,6 @@
     <HeroSlider />
     <PopularSection />
     <CatalogSection />
+    <UpdateSection />
   </div>
 </template>
