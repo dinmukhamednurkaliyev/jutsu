@@ -1,0 +1,66 @@
+import type { Comment } from "~/types/comment";
+
+export const comments: Comment[] = [
+  {
+    id: 1,
+    author: "Etarus",
+    authorTo: "/profile/etarus",
+    avatar: "/images/avatars/noavatar.png",
+    publishedAt: "02 августа 2026 в 18:08",
+    message: "Конец первой серии — постоянные лаги и зависания видеоряда.",
+    animeTitle: "Переворот военного движения 2",
+    animeTo: "/anime/martial-universe-season-2",
+  },
+  {
+    id: 2,
+    author: "egorkriper2014",
+    authorTo: "/profile/egorkriper2014",
+    avatar: "/images/avatars/noavatar.png",
+    publishedAt: "02 августа 2026 в 18:04",
+    message:
+      "Самурай Чамплу — это лучшее, что я слышал. Одно из лучших аниме с одним из лучших музыкальных сопровождений.",
+    animeTitle: "Самурай Чамплу",
+    animeTo: "/anime/samurai-champloo",
+  },
+  {
+    id: 3,
+    author: "endothelin",
+    authorTo: "/profile/endothelin",
+    avatar: "/images/avatars/noavatar.png",
+    publishedAt: "02 августа 2026 в 18:03",
+    message: "Гдеееее 😭",
+    animeTitle: "Реинкарнация безработного 3 сезон",
+    animeTo: "/anime/mushoku-tensei-season-3",
+  },
+  {
+    id: 4,
+    author: "CrymsOOOOn",
+    authorTo: "/profile/crymsoooon",
+    avatar: "/images/avatars/noavatar.png",
+    publishedAt: "02 августа 2026 в 18:01",
+    message:
+      "Незабываемый опыт. Мир, в котором не существует самого понятия «плохой сценарий». Для своего времени это было действительно сильно.",
+    animeTitle: "Нукитаси",
+    animeTo: "/anime/nukitashi",
+  },
+  {
+    id: 5,
+    author: "issonpreida",
+    authorTo: "/profile/issonpreida",
+    avatar: "/images/avatars/noavatar.png",
+    publishedAt: "02 августа 2026 в 17:34",
+    message: "Это же надо придумать 😂",
+    animeTitle: "Маг-целитель: Новый старт",
+    animeTo: "/anime/redo-of-healer",
+  },
+  {
+    id: 6,
+    author: "AmirK",
+    authorTo: "/profile/amirk",
+    avatar: "/images/avatars/noavatar.png",
+    publishedAt: "02 августа 2026 в 17:31",
+    message: "Жду следующую серию с нетерпением.",
+    animeTitle: "Изгнанный читер-чародей наслаждается беззаботной второй жизнью",
+    animeTo: "/anime/banished-cheat-magician",
+  },
+];
