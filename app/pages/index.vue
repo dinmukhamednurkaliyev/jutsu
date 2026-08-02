@@ -5,5 +5,6 @@
     <CatalogAnimeSection />
     <UpdateAnimeSection />
     <TopAnimeSection />
+    <CommentsSection />
   </div>
 </template>
