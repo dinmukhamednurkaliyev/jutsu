@@ -13,7 +13,7 @@ defineProps<Props>();
   <header class="mb-6 flex items-start justify-between gap-6">
     <div>
       <div class="flex items-center gap-2">
-        <Icon :name="icon" class="size-6 text-accent-start" aria-hidden="true" />
+        <Icon :name="icon" class="text-accent-start" aria-hidden="true" size="24" />
 
         <h2 :id="titleId" class="text-2xl font-bold tracking-tight">
           {{ title }}

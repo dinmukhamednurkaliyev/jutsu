@@ -25,6 +25,16 @@
   --color-accent-end: #c882ff;
   --color-badge-start: #ff6e30;
   --color-badge-end: #ffdc82;
+
+  /* Rank */
+  --color-rank-first-start: #ffe58f;
+  --color-rank-first-end: #f7c83d;
+
+  --color-rank-second-start: #f5f5f5;
+  --color-rank-second-end: #bcbcbc;
+
+  --color-rank-third-start: #ffc998;
+  --color-rank-third-end: #e58b3f;
 }
 
 @layer utilities {
@@ -34,5 +44,17 @@
 
   .badge-gradient {
     @apply bg-linear-to-r from-badge-start to-badge-end;
+  }
+
+  .rank-first-gradient {
+    @apply bg-linear-to-b from-rank-first-start to-rank-first-end bg-clip-text text-transparent;
+  }
+
+  .rank-second-gradient {
+    @apply bg-linear-to-b from-rank-second-start to-rank-second-end bg-clip-text text-transparent;
+  }
+
+  .rank-third-gradient {
+    @apply bg-linear-to-b from-rank-third-start to-rank-third-end bg-clip-text text-transparent;
   }
 }
