@@ -10,7 +10,6 @@ import { comments } from "~/data/comments";
       description="Обсуждение деталей с другими зрителями"
       icon="lucide:messages-square"
     />
-
     <CommentsGrid :comments="comments" />
   </AppSection>
 </template>
