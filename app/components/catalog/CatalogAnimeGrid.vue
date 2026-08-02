@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Anime } from "~/types/anime";
+
 interface Props {
   animeList: Anime[];
 }
