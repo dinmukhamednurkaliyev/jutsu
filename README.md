@@ -27,25 +27,11 @@
 
 ## Overview
 
-A non-commercial educational frontend project that recreates selected interface elements and interaction patterns of Jut.su. The project is built from scratch using Nuxt, Vue, TypeScript, Pinia, and Tailwind CSS.
+Responsive frontend clone of the Jut.su homepage built with Nuxt 4, Vue 3, TypeScript and Tailwind CSS. Focuses on reusable UI components, responsive layouts and clean project architecture.
 
-The main goals of the project are:
+## Live Demo
 
-- practicing component-based interface development;
-- building reusable Vue components;
-- organizing a maintainable Nuxt project structure;
-- implementing responsive layouts;
-- working with TypeScript and centralized application state;
-- reproducing real-world interface patterns from an existing product.
-
-## Features
-
-- Built with Nuxt 3 and Vue 3
-- Type-safe codebase with TypeScript
-- State management with Pinia
-- Utility-first styling using Tailwind CSS
-- Component-based architecture
-- Responsive user interface
+-> https://jutsu-clone.vercel.app/
 
 ## Screenshots
 
@@ -56,16 +42,35 @@ The main goals of the project are:
 >
 </p>
 
-## Distribution
+## Features
 
-| Target  | Availability    |
-| ------- | --------------- |
-| Web     | ✔ Available     |
-| Windows | ✖ Not Available |
-| Linux   | ✖ Not Available |
-| MacOS   | ✖ Not Available |
-| Android | ✖ Not Available |
-| iOS     | ✖ Not Available |
+### Sections
+
+- Header Section
+- Hero Section
+- Popular Section
+- Catalog Section
+- Updates Section
+- Top Anime Section
+- Comments Section
+- About Section
+- Footer Section
+
+### Components
+
+- App Button
+- App Section
+- App Section Header
+- Slider Controls
+- Slider Pagination
+- Anime Card
+
+### Architecture
+
+- Component Architecture
+- Data Separation
+- Type-safe Interfaces
+- Responsive Layout
 
 ## Disclaimer
 

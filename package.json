@@ -8,17 +8,18 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "typecheck": "nuxt typecheck",
     "check": "bun run lint && bun run typecheck && bun run format:check"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.11.3",
-    "nuxt": "^4.5.1",
-    "pinia": "^3.0.4",
-    "vue": "^3.5.40",
+    "@pinia/nuxt": "^1.0.1",
+    "nuxt": "^4.5.2",
+    "pinia": "^4.0.2",
+    "vue": "^3.5.41",
     "vue-router": "^5.2.0"
   },
   "devDependencies": {
@@ -30,10 +31,12 @@
     "prettier": "^3.9.6",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3",
-    "vue-tsc": "^3.3.8"
+    "typescript": "^6",
+    "vue-tsc": "^3.3.9"
   },
   "overrides": {
     "tar": "7.5.21",
-    "brace-expansion": "5.0.8"
+    "brace-expansion": "5.0.9",
+    "postcss": "8.5.23"
   }
 }
