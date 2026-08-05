@@ -6,7 +6,6 @@
     <UpdateAnimeSection />
     <TopAnimeSection />
     <CommentsSection />
+    <AboutSection />
   </div>
-
-  <AboutSection />
 </template>
