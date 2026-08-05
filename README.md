@@ -22,7 +22,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Pinia](https://img.shields.io/badge/Pinia-FFD859?logo=pinia&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
-![Release](https://img.shields.io/badge/release-pre--release-orange)
 ![License](https://img.shields.io/github/license/dinmukhamednurkaliyev/jutsu)
 
 ## Overview
